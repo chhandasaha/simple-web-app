@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script>
+	var counter = 0;
+	function submit(){
+		var username = document.getElementById('username').value;
+		var email = document.getElementById('email').value;
+		counter=counter+1;
+		//alert(counter+ "," + username+ "," +email);
+		document.getElementById('userForm').style.display = "none";
+		document.getElementById('userButton').style.display="block";
+		}
+	function showForm(){
+		document.getElementById('userForm').style.display="block";
+		document.getElementById('userButton').style.display="none";
+	}
+  </script>
+  <link href="app.css" rel="stylesheet" type="text/css">
+  
+ </head>
+<body>
+  <h2>USER Table</h2>
+<div class = "appTable">
+<table>
+<tr>
+	<th>Number</th>
+	<th>Name</th>
+	<th>Email</th>
+</tr>
+<tr>
+	<td>1</td>
+	<td>Tom</td>
+	<td>tom@gmail.com</td>
+</tr>
+</table>
+</div>
+<div class= "userButton" id="userButton">
+	<button onclick="showForm()">ADD USER</button>
+	
+	
+</div>
+<div class="userForm" id="userForm">
+
+	<label>Name :</label>
+	<input type="text" id="username" name="username"><br>
+	<br>
+	<label>Email :</label>
+	<input type="email" id="email" name="email">
+	<br>
+	<br>
+	<button onclick= "submit()">Submit</button>
+
+</div>
+  <!--	<p id="para">this is a paragraph</p>-->
+</body>
+</html>
