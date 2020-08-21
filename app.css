@@ -1,15 +1,8 @@
 .userForm{
-	display: none;
-	}
-.trow{
-	cursor:pointer;
-}
-.userForm > .input {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	border: none;
-	background-color: #94ccff;
-	color: black;
-  }
+    	display : none;
+        padding-left: 20px;
+        padding-top:10px;
+    }
+    .trow{
+    	cursor: pointer;
+    }
